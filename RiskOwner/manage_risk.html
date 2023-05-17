@@ -108,23 +108,23 @@
 							<img class="rounded-circle" src="../assets/img/user.jpg" width="24" alt="Admin">
 							<span class="status online"></span>
 						</span>
-						<span>Owner</span>
+						<span>Risk Owner</span>
                     </a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="profile.html">My Profile</a>
-						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-						<a class="dropdown-item" href="settings.html">Settings</a>
-						<a class="dropdown-item" href="login.html">Logout</a>
+						<a class="dropdown-item" href="#">My Profile</a>
+						<a class="dropdown-item" href="#">Edit Profile</a>
+						<a class="dropdown-item" href="#">Settings</a>
+						<a class="dropdown-item" href="../index.html">Logout</a>
 					</div>
                 </li>
             </ul>
             <div class="dropdown mobile-user-menu float-right">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-                    <a class="dropdown-item" href="settings.html">Settings</a>
-                    <a class="dropdown-item" href="login.html">Logout</a>
+                    <a class="dropdown-item" href="#">My Profile</a>
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="../index.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -168,18 +168,42 @@
             
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-5 col-4">
-                        <h4 class="page-title">Risk Reports</h4>
-                    </div>
-                    <div class="col-sm-7 col-8 text-right m-b-30">
-                        <div class="btn-group btn-group-sm">
-                            <button class="btn btn-white">CSV</button>
-                            <button class="btn btn-white">PDF</button>
-                            <button class="btn btn-white"><i class="fa fa-print fa-lg"></i> Print</button>
-                        </div>
+                    <div class="col-sm-12">
+                        <h4 class="page-title">Manage Risks</h4>
                     </div>
                 </div>
-
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus select-focus">
+                            <label class="focus-label">Risk Category</label>
+                            <select class="select floating form-control">
+                                <option>Select</option>
+                                <option>Compliance Risk</option>
+                                <option>Operational Risk</option>
+                                <option>Financial Risk</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus">
+                            <label class="focus-label">From</label>
+                            <div class="cal-icon">
+                                <input class="form-control floating datetimepicker" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="form-group form-focus">
+                            <label class="focus-label">To</label>
+                            <div class="cal-icon">
+                                <input class="form-control floating datetimepicker" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <a href="#" class="btn btn-success btn-block">Search</a>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="table-responsive">
@@ -203,15 +227,15 @@
                                         <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
                                         <td>1 May 2023</td>
                                         <td>Aminu Adamu</td>
-                                        <td>09</td>
+                                        <td>06</td>
                                         <td><span class="custom-badge status-green">Low</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-eye m-r-5"></i> View</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -221,35 +245,54 @@
                                         <td>CME02</td>
                                         <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
                                         <td>1 May 2023</td>
-                                        <td>Aminu Adamu</td>
-                                        <td>09</td>
-                                        <td><span class="custom-badge status-green">Low</span></td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action">
-                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-eye m-r-5"></i> View</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>CME04</td>
-                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
-                                        <td>1 May 2023</td>
-                                        <td>Champion Name</td>
+                                        <td>Chmap Name</td>
                                         <td>16</td>
                                         <td><span class="custom-badge status-red">High</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-eye m-r-5"></i> View</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CME03</td>
+                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
+                                        <td>1 May 2023</td>
+                                        <td>Champ Name</td>
+                                        <td>09</td>
+                                        <td><span class="custom-badge status-orange">Medium</span></td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CME04</td>
+                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
+                                        <td>1 May 2023</td>
+                                        <td>Sam John</td>
+                                        <td>06</td>
+                                        <td><span class="custom-badge status-green">Low</span></td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
                                                 </div>
                                             </div>
                                         </td>
