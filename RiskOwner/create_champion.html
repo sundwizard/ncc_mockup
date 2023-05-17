@@ -165,151 +165,62 @@
             </div>
         </div>
         <div class="page-wrapper">
+            
             <div class="content">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="dash-widget">
-							<span class="dash-widget-bg1"><i class="fa fa-bars" aria-hidden="true"></i></span>
-							<div class="dash-widget-info text-right">
-								<h3>1072</h3>
-								<span class="widget-title1">Risks <i class="fa fa-check" aria-hidden="true"></i></span>
-							</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="dash-widget">
-                            <span class="dash-widget-bg2"><i class="fa fa-check"></i></span>
-                            <div class="dash-widget-info text-right">
-                                <h3>507</h3>
-                                <span class="widget-title2">Low <i class="fa fa-check" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="dash-widget">
-                            <span class="dash-widget-bg3 bg-danger"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
-                            <div class="dash-widget-info text-right">
-                                <h3>72</h3>
-                                <span class="widget-title3 bg-danger">High <i class="fa fa-check" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="dash-widget">
-                            <span class="dash-widget-bg4"><i class="fa fa-edit" aria-hidden="true"></i></span>
-                            <div class="dash-widget-info text-right">
-                                <h3>418</h3>
-                                <span class="widget-title4">Medium <i class="fa fa-check" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
+                    <div class="col-sm-12">
+                        <h4 class="page-title">Risk Champion</h4>
                     </div>
                 </div>
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-6 col-xl-6">
-						<div class="card">
-							<div class="card-body">
-								<div class="chart-title">
-									<h4>Risk Accessment Graph</h4>
-									<span class="float-right"><i class="fa fa-caret-up" aria-hidden="true"></i> 15% Higher than Last Month</span>
-								</div>	
-								<canvas id="linegraph"></canvas>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-6 col-xl-6">
-						<div class="card">
-							<div class="card-body">
-								<div class="chart-title">
-									<h4>Customizable Risk Chart</h4>
-									<div class="float-right">
-										<ul class="chat-user-total">
-											<li><i class="fa fa-circle current-users" aria-hidden="true"></i>Medium</li>
-											<li><i class="fa fa-circle old-users" aria-hidden="true"></i> High</li>
-										</ul>
-									</div>
-								</div>	
-								<canvas id="bargraph"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					
-					<div class="col-6 col-md-12 col-lg-12 col-xl-12">
-						<div class="hospital-barchart">
-							<h4 class="card-title d-inline-block">Risk Statistics</h4>
-						</div>
-						<div class="bar-chart">
-							<div class="legend">
-								<div class="item">
-									<h4>Level1</h4>
-								</div>
-								
-								<div class="item">
-									<h4>Level2</h4>
-								</div>
-								<div class="item text-right">
-									<h4>Level3</h4>
-								</div>
-								<div class="item text-right">
-									<h4>Level4</h4>
-								</div>
-							</div>
-							<div class="chart clearfix">
-								<div class="item">
-									<div class="bar">
-										<span class="percent">16%</span>
-										<div class="item-progress" data-percent="13">
-											<span class="title">High</span>
-                                            
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="bar">
-										<span class="percent">71%</span>
-										<div class="item-progress" data-percent="71">
-											<span class="title">Low</span>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="bar">
-										<span class="percent">82%</span>
-										<div class="item-progress" data-percent="82">
-											<span class="title">Medium</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					 </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card-box">
+                            <h4 class="card-title">Risk Champion Information</h4>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label>Champion ID</label>
+                                    <input type="text" class="form-control">
+                                </div>
 
-                     <!-- something here -->
-                     <!-- <div class="card-box progress-example col-12 col-md-6 col-lg-4 col-xl-4">
-                        <h4 class="card-title">Progress Bars</h4>
-                        <div class="col-lg-12">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Department:</label>
+                                    <select class="form-control">
+                                        <option>Select Category</option>
+                                        <option value="1">Operations</option>
+                                        <option value="2">ICT</option>
+                                        <option value="3">Finance</option>
+                                        <option value="4">Compliance</option>
+                                    </select>
+                                </div>
+                                                                                                                                             
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                            </form>
                         </div>
-                    </div> -->
-
-				</div>
+                    </div>
+                    
+                </div>
+                
+                
             </div>
+
+
             <div class="notification-box">
                 <div class="msg-sidebar notifications msg-noti">
                     <div class="topnav-dropdown-header">
@@ -515,7 +426,7 @@
                         </ul>
                     </div>
                     <div class="topnav-dropdown-footer">
-                        <a href="chat.html">See all messages</a>
+                        <a href="#">See all messages</a>
                     </div>
                 </div>
             </div>
