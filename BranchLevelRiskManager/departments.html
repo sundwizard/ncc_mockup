@@ -159,42 +159,14 @@
             </div>
         </div>
         <div class="page-wrapper">
+            
             <div class="content">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="page-title">Manage Risks</h4>
+                    <div class="col-sm-5 col-5">
+                        <h4 class="page-title">Departments</h4>
                     </div>
-                </div>
-                <div class="row filter-row">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="form-group form-focus select-focus">
-                            <label class="focus-label">Risk Category</label>
-                            <select class="select floating form-control">
-                                <option>Select</option>
-                                <option>Compliance Risk</option>
-                                <option>Operational Risk</option>
-                                <option>Financial Risk</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="form-group form-focus">
-                            <label class="focus-label">From</label>
-                            <div class="cal-icon">
-                                <input class="form-control floating datetimepicker" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="form-group form-focus">
-                            <label class="focus-label">To</label>
-                            <div class="cal-icon">
-                                <input class="form-control floating datetimepicker" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <a href="#" class="btn btn-success btn-block">Search</a>
+                    <div class="col-sm-7 col-7 text-right m-b-30">
+                        <a href="add_department.html" class="btn btn-primary btn-rounded"><i class="fa fa-plus"></i> Add Department</a>
                     </div>
                 </div>
                 <div class="row">
@@ -204,11 +176,7 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Risk ID</th>
-                                        <th>Description</th>
-                                        <th>Created Date</th>
-                                        <th>Risk Champion</th>
-                                        <th>Risk rating</th>
+                                        <th>Department Name</th>
                                         <th>Status</th>
                                         <th class="text-right">Action</th>
                                     </tr>
@@ -216,76 +184,84 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>CME03</td>
-                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
-                                        <td>1 May 2023</td>
-                                        <td>Aminu Adamu</td>
-                                        <td>06</td>
-                                        <td><span class="custom-badge status-green">Low</span></td>
+                                        <td>ICT</td>
+										<td><span class="custom-badge status-green">Active</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>CME02</td>
-                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
-                                        <td>1 May 2023</td>
-                                        <td>Chmap Name</td>
-                                        <td>16</td>
-                                        <td><span class="custom-badge status-red">High</span></td>
+                                        <td>Finance</td>
+										<td><span class="custom-badge status-red">Inactive</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>CME03</td>
-                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
-                                        <td>1 May 2023</td>
-                                        <td>Champ Name</td>
-                                        <td>09</td>
-                                        <td><span class="custom-badge status-orange">Medium</span></td>
+                                        <td>Operations</td>
+										<td><span class="custom-badge status-green">Active</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>CME04</td>
-                                        <td>The Compliance Monitoring plan may not be adequate for effective implementation</td>
-                                        <td>1 May 2023</td>
-                                        <td>Sam John</td>
-                                        <td>06</td>
-                                        <td><span class="custom-badge status-green">Low</span></td>
+                                        <td>Procurement</td>
+										<td><span class="custom-badge status-red">Inactive</span></td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-list m-r-5"></i> Mitigate</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-check m-r-5"></i> Accept</a>
-                                                    <a class="dropdown-item" href="#"><i class="fa fa-share-alt m-r-5"></i> Transfer</a>
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Compliance Monitoring and enforcement</td>
+										<td><span class="custom-badge status-green">Active</span></td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Corporate Planning, Strategy and Risk Management</td>
+										<td><span class="custom-badge status-green">Active</span></td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="edit-department.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -295,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-            </div>           
+            </div>
 
         </div>
     </div>
