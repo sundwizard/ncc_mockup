@@ -721,6 +721,11 @@ textarea.form-control {
 	width: 230px;
 	z-index: 1;
 }
+
+.header .header-left span img{
+	width: 60% !important;
+	margin-left: -60px !important;
+}
 .logo {
 	align-items: center;
 	display: flex;
@@ -4914,5 +4919,16 @@ blockquote p {
 		text-align: center;
 		margin: 0 auto;
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	.header .header-left span img{
+		width: 40% !important;
+		margin-left: -150px !important;
+	}
+
+	.header .header-left img{
+		margin-left: 160px !important;
 	}
 }
