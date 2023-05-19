@@ -145,6 +145,7 @@ input[type=password] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	color: #034479;
 }
 textarea.form-control {
 	resize: vertical;
@@ -1785,7 +1786,7 @@ ul.chat-user-total li i.old-users {
 }
 .search-box .input-group {
 	background-color: #e6e6e6;
-	border: 1px solid #ddd;
+	border: 1px solid #034479;
 	border-radius: 50px;
 }
 .search-box .input-group .form-control {
