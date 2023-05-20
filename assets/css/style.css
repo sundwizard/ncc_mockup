@@ -4535,6 +4535,16 @@ blockquote p {
 	}
 }
 @media only screen and (max-width: 991.98px) {
+
+	.header .header-left span img{
+		width: 40% !important;
+		margin-left: -100px !important;
+	}
+
+	.header .header-left img{
+		margin-left: 120px !important;
+	}
+
 	.profile-rightbar {
 		display: inline-block !important;
 	}
@@ -4621,6 +4631,7 @@ blockquote p {
 	}
 }
 @media only screen and (max-width: 767.98px) {
+	
 	.profile-info-left {
 		border-right: none;
 		border-bottom: 2px dashed #ccc;
@@ -4790,7 +4801,7 @@ blockquote p {
 		margin: 0px;
 	}
 }
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 575.98px) {	
 	.contact-cat {
 		padding-right: 70px;
 	}
@@ -4920,6 +4931,15 @@ blockquote p {
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
+
+	.header .header-left span img{
+		width: 40% !important;
+		margin-left: -100px !important;
+	}
+
+	.header .header-left img{
+		margin-left: 100px !important;
+	}
 }
 
 @media screen and (max-width:1000px) {
@@ -4930,5 +4950,38 @@ blockquote p {
 
 	.header .header-left img{
 		margin-left: 160px !important;
+	}
+}
+
+@media screen and (max-width:380px) {
+	.header .header-left span img{
+		width: 40% !important;
+		margin-left: -100px !important;
+	}
+
+	.header .header-left img{
+		margin-left: 100px !important;
+	}
+}
+
+@media screen and (max-width:450px) {
+	.header .header-left span img{
+		width: 40% !important;
+		margin-left: -100px !important;
+	}
+
+	.header .header-left img{
+		margin-left: 120px !important;
+	}
+}
+
+@media screen and (min-width:490px) {
+	.header .header-left span img{
+		width: 80px  !important;
+		margin-left: -10% !important;
+	}
+
+	.header .header-left img{
+		margin-left: -60% !important;
 	}
 }
