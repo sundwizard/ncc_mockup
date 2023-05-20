@@ -4975,13 +4975,13 @@ blockquote p {
 	}
 }
 
-@media screen and (min-width:490px) {
+@media screen and (min-width:490px) and (max-width:980px) {
 	.header .header-left span img{
 		width: 80px  !important;
 		margin-left: -10% !important;
 	}
 
 	.header .header-left img{
-		margin-left: -60% !important;
+		margin-left: -70% !important;
 	}
 }
